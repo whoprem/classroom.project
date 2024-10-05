@@ -1,2 +1,0 @@
-# classroom.project
-hello world!
