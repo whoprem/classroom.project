@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    border:border-box;
+    padding:0;
+}
+body{
+    flex-direction: column;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: #dde1e7;
+    width: 100vw;
+    margin-top: 10px;
+}
+body::before{
+    content:"";
+    position: absolute;
+    right: -700px;
+    top: -200px;
+    height: 950px;
+    width: 950;
+    background-color: #eb94ab;
+    border-radius: 50%;
+    overflow:hidden;
+}
+.container{
+    position: relative;
+}
+.main-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 550;
+    height: 335;
+    border-radius: 8px;
+    padding: 25px 20px;
+    box-shadow: -3px -3px 7px #bcafaf,
+        2px 2px 5px rgb(102,144,216);
+    overflow: hidden;
+}
+        .description{
+            width: 250px;
+        }
+        .des h2{
+            margin-bottom: 5px;
+        }
+        .des p{
+            font-size:14px;
+            margin-bottom:10px;
+            width:100%;
+        }
+        .rating{
+            margin-bottom:15px;
+        }
+        .rating i{
+            color:rgb(219,62,62);
+        }
+        .priceBefore{
+            color: rgb(119,110,110);
+            margin-left:10px;
+        }
+        .priceCurrent{
+            font-size: 22px;
+            color: rgb(219,62,62);
+        }
+        .add-btn{
+            margin-top:35px;
+        }
+        .add-btn button{
+            padding: 10px 15px;
+            background: #00cfcf;
+            color:white;
+            outline: none;
+            border:none;
+            font-size:16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .add-btn button:active{
+            background:rgb(6,149,193);
+        }
+        .aboutCamera{
+            z-index:200;
+            position: relative;
+            width:250px;
+        }
+        .aboutCamera::after{
+            content:"";
+            position: absolute;
+            height: 450px;
+            width:450px;
+            border-radius: 50%;
+            background-color:#fd4476;
+            right: -200px;
+            top:-130px;
+            mix-blend-mode: overlay;
+            z-index:1;
+            
+        }
+        img{
+            height:250px;
+            z-index:100;
+            position:relative;
+            top: -60px;
+            width: 330px;
+            border-radius: 70%;
+            margin-bottom: 15px;
+        }
+        .about{
+            position: relative;
+            top:-80px;
+            text-align: right;
+        }
+        .about .name{
+            font-size:11px;
+            font-weight:bold;
+            color:rgb(57,53,53);
+        }
+        .about .version{
+            color:white;
+            font-size:14px;
+            margin-top:5px;
+        }
+        .about .shipPrice{
+            font-size:11px;
+            font-weight: bold;
+            color: rgb(57,53,53);
+            margin-top: 5px;
+        }
+        .loginBtn{
+            margin-top:10px;
+        }
+        .loginBtn button{
+            color:white;
+            background: transparent;
+            outline:none;
+            border: 1px solid white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        
